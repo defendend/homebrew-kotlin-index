@@ -1,16 +1,16 @@
 class AstIndex < Formula
-  desc "Fast code search CLI for Android/Kotlin/Java, iOS/Swift/ObjC, Perl, Python, Go, Proto, WSDL, and C++ projects"
+  desc "Fast code search CLI for Android, iOS, TypeScript, Rust, Ruby, C#, Python, Go, Perl, C++ projects"
   homepage "https://github.com/defendend/Claude-ast-index-search"
-  url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.8.5/ast-index-3.8.5-darwin-arm64.tar.gz"
-  sha256 "4147af672eae1b40c19468abb9cd58336529c2451fe055011faf26811ad4fce0"
+  url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.9.0/ast-index-3.9.0-darwin-arm64.tar.gz"
+  sha256 "2d96fcff3209b026d24d19b82781ccbdca902838ecdf9f3835fba2711dc0d79d"
   license "MIT"
-  version "3.8.5"
+  version "3.9.0"
 
   def install
     bin.install "ast-index"
   end
 
   test do
-    assert_match "ast-index v3.8.5", shell_output("#{bin}/ast-index version")
+    assert_match "ast-index v3.9.0", shell_output("#{bin}/ast-index version")
   end
 end
